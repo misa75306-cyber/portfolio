@@ -85,12 +85,6 @@ export default function Home() {
       />
       <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4">
         <div className="relative max-w-5xl mx-auto px-4 py-4 flex items-center justify-center">
-          <a
-            href="#"
-            className="absolute left-4 text-lg font-semibold text-emerald-400"
-          >
-            Mykhailo
-          </a>
           <nav className="flex items-center gap-6 rounded-full border border-zinc-800/80 bg-zinc-900/80 px-5 py-2 shadow-lg backdrop-blur-md">
             <ul className="flex items-center gap-6">
               {navLinks.map((link) => (
