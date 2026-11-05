@@ -83,7 +83,7 @@ export default function Home() {
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-emerald-500/10 blur-[120px]"
       />
-      <header className="sticky top-4 z-50 max-w-5xl mx-auto px-4 w-full">
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4">
         <div className="relative max-w-5xl mx-auto px-4 py-4 flex items-center justify-center">
           <a
             href="#"
@@ -114,7 +114,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-4 py-12 w-full">
+      <main className="max-w-5xl mx-auto px-4 pt-28 pb-12 w-full">
         <section id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
           <div className="lg:col-span-5">
             <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-4 backdrop-blur-sm">
