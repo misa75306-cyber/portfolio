@@ -141,8 +141,8 @@ export default function Home() {
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
               Python &amp; Full-Stack Developer
             </span>
-            <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
-              Mykhailo <span className="text-emerald-400">Steshyn</span>
+            <h1 className="mt-6 font-extrabold tracking-tight text-4xl sm:text-5xl text-white">
+              Mykhailo Steshyn
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-300">
               I build Python automations, clean APIs, and modern full-stack web
