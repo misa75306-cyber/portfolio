@@ -60,8 +60,11 @@ export default function Home() {
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-emerald-500/10 blur-[120px]"
       />
       <header className="sticky top-0 z-50">
-        <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="#" className="text-lg font-semibold text-emerald-400">
+        <div className="relative max-w-5xl mx-auto px-4 py-4 flex items-center justify-center">
+          <a
+            href="#"
+            className="absolute left-4 text-lg font-semibold text-emerald-400"
+          >
             Mykhailo
           </a>
           <nav className="flex items-center gap-6 rounded-full border border-zinc-800/80 bg-zinc-900/80 px-5 py-2 shadow-lg backdrop-blur-md">
