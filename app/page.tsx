@@ -54,25 +54,35 @@ function LinkedInIcon() {
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-between bg-zinc-950 text-zinc-100">
-      <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/80 backdrop-blur">
+    <div className="relative isolate min-h-screen flex flex-col justify-between overflow-hidden bg-zinc-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))] text-zinc-100">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-emerald-500/10 blur-[120px]"
+      />
+      <header className="sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#" className="text-lg font-semibold text-emerald-400">
             Mykhailo
           </a>
-          <nav>
-            <ul className="flex items-center gap-6 text-sm">
+          <nav className="flex items-center gap-6 rounded-full border border-zinc-800/80 bg-zinc-900/80 px-5 py-2 shadow-lg backdrop-blur-md">
+            <ul className="flex items-center gap-6">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-zinc-400 transition-colors hover:text-emerald-400"
+                    className="text-sm text-zinc-400 transition-colors hover:text-zinc-100"
                   >
                     {link.label}
                   </a>
                 </li>
               ))}
             </ul>
+            <a
+              href="#contact"
+              className="rounded-full bg-purple-600 px-4 py-1.5 text-sm font-medium text-white transition-all hover:bg-purple-500"
+            >
+              Get in Touch
+            </a>
           </nav>
         </div>
       </header>
@@ -103,7 +113,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
               >
                 <GitHubIcon />
                 GitHub
@@ -113,7 +123,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
               >
                 <LinkedInIcon />
                 LinkedIn
@@ -122,7 +132,7 @@ export default function Home() {
           </div>
 
           <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/50 p-4 backdrop-blur-sm">
+            <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/50 p-4 backdrop-blur-sm">
               <div className="h-64 rounded-xl bg-zinc-800" />
               <div className="mt-4 flex items-center justify-between px-1 pb-1">
                 <div>
@@ -157,7 +167,7 @@ export default function Home() {
                 {item.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-md border border-zinc-800 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
+                    className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
                   >
                     {tag}
                   </li>
@@ -168,7 +178,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-zinc-800">
+      <footer className="border-t border-zinc-800/80">
         <div className="max-w-5xl mx-auto px-4 py-6 text-sm text-zinc-500">
           © {new Date().getFullYear()} Mykhailo. All rights reserved.
         </div>
