@@ -83,7 +83,7 @@ export default function Home() {
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-emerald-500/10 blur-[120px]"
       />
-      <header className="sticky top-0 z-50">
+      <header className="sticky top-4 z-50 max-w-5xl mx-auto px-4 w-full">
         <div className="relative max-w-5xl mx-auto px-4 py-4 flex items-center justify-center">
           <a
             href="#"
