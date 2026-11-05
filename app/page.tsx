@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
@@ -77,6 +81,31 @@ function LinkedInIcon() {
 }
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("about");
+
+  useEffect(() => {
+    const sections = navLinks
+      .map((link) => document.getElementById(link.href.slice(1)))
+      .filter((section): section is HTMLElement => section !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visible[0]) {
+          setActiveSection(visible[0].target.id);
+        }
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative isolate min-h-screen flex flex-col justify-between overflow-hidden bg-zinc-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(16,185,129,0.15),rgba(255,255,255,0))] text-zinc-100">
       <div
@@ -87,16 +116,25 @@ export default function Home() {
         <div className="relative max-w-5xl mx-auto px-4 py-4 flex items-center justify-center">
           <nav className="flex items-center gap-6 rounded-full border border-zinc-800/80 bg-zinc-900/80 px-5 py-2 shadow-lg backdrop-blur-md">
             <ul className="flex items-center gap-6">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <a
-                    href={link.href}
-                    className="text-sm text-zinc-300 transition-colors hover:text-zinc-100"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = activeSection === link.href.slice(1);
+
+                return (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      aria-current={isActive ? "page" : undefined}
+                      className={`text-sm transition-colors ${
+                        isActive
+                          ? "text-emerald-400 font-medium"
+                          : "text-zinc-400 hover:text-white"
+                      }`}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                );
+              })}
             </ul>
             <a
               href="#contact"
@@ -247,7 +285,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-zinc-800/80">
+      <footer id="contact" className="border-t border-zinc-800/80">
         <div className="max-w-5xl mx-auto px-4 py-6 text-sm text-zinc-500">
           © {new Date().getFullYear()} Mykhailo. All rights reserved.
         </div>
