@@ -59,7 +59,7 @@ export default function Home() {
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/3 rounded-full bg-emerald-500/10 blur-[120px]"
       />
-      <header className="sticky top-0 z-50 border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur">
+      <header className="sticky top-0 z-50">
         <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#" className="text-lg font-semibold text-emerald-400">
             Mykhailo
@@ -79,7 +79,7 @@ export default function Home() {
             </ul>
             <a
               href="#contact"
-              className="rounded-full bg-purple-600 px-4 py-1.5 text-sm font-medium text-white transition-all hover:bg-purple-500"
+              className="rounded-full bg-emerald-500 px-4 py-1.5 font-medium text-zinc-950 shadow-md shadow-emerald-500/10 transition-all hover:bg-emerald-400"
             >
               Get in Touch
             </a>
@@ -89,6 +89,27 @@ export default function Home() {
 
       <main className="max-w-5xl mx-auto px-4 py-12 w-full">
         <section id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
+          <div className="lg:col-span-5">
+            <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-4 backdrop-blur-sm">
+              <div className="h-64 rounded-xl bg-zinc-800" />
+              <div className="mt-4 flex items-center justify-between px-1 pb-1">
+                <div>
+                  <p className="font-medium">Mykhailo Steshyn</p>
+                  <p className="text-sm text-zinc-400">
+                    Python Developer / Software Engineer
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-400">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+                  </span>
+                  Available for projects
+                </span>
+              </div>
+            </div>
+          </div>
+
           <div className="lg:col-span-7">
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
               Python Developer / Software Engineer
@@ -128,27 +149,6 @@ export default function Home() {
                 <LinkedInIcon />
                 LinkedIn
               </a>
-            </div>
-          </div>
-
-          <div className="lg:col-span-5">
-            <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/50 p-4 backdrop-blur-sm">
-              <div className="h-64 rounded-xl bg-zinc-800" />
-              <div className="mt-4 flex items-center justify-between px-1 pb-1">
-                <div>
-                  <p className="font-medium">Mykhailo Steshyn</p>
-                  <p className="text-sm text-zinc-400">
-                    Python Developer / Software Engineer
-                  </p>
-                </div>
-                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-400">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-                  </span>
-                  Available for projects
-                </span>
-              </div>
             </div>
           </div>
         </section>
