@@ -97,7 +97,7 @@ export default function Home() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-sm text-zinc-400 transition-colors hover:text-zinc-100"
+                    className="text-sm text-zinc-300 transition-colors hover:text-zinc-100"
                   >
                     {link.label}
                   </a>
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="mt-4 flex items-center justify-between px-1 pb-1">
                 <div>
                   <p className="font-medium">Mykhailo Steshyn</p>
-                  <p className="text-sm text-zinc-400">
+                  <p className="text-sm text-zinc-300">
                     Python &amp; Full-Stack Developer
                   </p>
                 </div>
@@ -144,7 +144,7 @@ export default function Home() {
             <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
               Mykhailo <span className="text-emerald-400">Steshyn</span>
             </h1>
-            <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-400">
+            <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-300">
               I build Python automations, clean APIs, and modern full-stack web
               applications — pairing robust backends with responsive interfaces
               to turn repetitive work into dependable systems and raw data into
@@ -191,14 +191,14 @@ export default function Home() {
               className="rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-5 transition hover:border-zinc-700"
             >
               <h2 className="font-semibold text-zinc-100">{item.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+              <p className="mt-2 text-sm leading-relaxed text-zinc-300">
                 {item.description}
               </p>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {item.tags.map((tag) => (
                   <li
                     key={tag}
-                    className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
+                    className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-300"
                   >
                     {tag}
                   </li>
@@ -216,7 +216,7 @@ export default function Home() {
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
               Projects
             </h2>
-            <p className="mt-2 text-sm text-zinc-400">
+            <p className="mt-2 text-sm text-zinc-300">
               A few projects that show how I combine Python backends with modern
               full-stack web experiences.
             </p>
@@ -234,14 +234,14 @@ export default function Home() {
                 <h3 className="mt-1 font-semibold text-zinc-100">
                   {project.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+                <p className="mt-2 text-sm leading-relaxed text-zinc-300">
                   {project.description}
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <li
                       key={tag}
-                      className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
+                      className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-300"
                     >
                       {tag}
                     </li>
