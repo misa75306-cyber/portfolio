@@ -124,9 +124,9 @@ export default function Home() {
                     <a
                       href={link.href}
                       aria-current={isActive ? "page" : undefined}
-                      className={`text-sm transition-colors ${
+                      className={`inline-block text-sm transition-all duration-200 ${
                         isActive
-                          ? "text-emerald-400 font-medium"
+                          ? "scale-105 text-emerald-400 font-semibold drop-shadow-[0_0_8px_rgba(16,185,129,0.6)]"
                           : "text-zinc-400 hover:text-white"
                       }`}
                     >
@@ -138,7 +138,7 @@ export default function Home() {
             </ul>
             <a
               href="#contact"
-              className="rounded-full bg-emerald-500 px-4 py-1.5 font-medium text-zinc-950 shadow-md shadow-emerald-500/10 transition-all hover:bg-emerald-400"
+              className="ml-4 rounded-full bg-emerald-500 px-4 py-1.5 font-medium text-zinc-950 shadow-md shadow-emerald-500/10 transition-all hover:bg-emerald-400"
             >
               Get in Touch
             </a>
