@@ -181,10 +181,40 @@ export default function Home() {
           </div>
         </section>
 
+        <section
+          id="skills"
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {highlights.map((item) => (
+            <article
+              key={item.title}
+              className="rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-5 transition hover:border-zinc-700"
+            >
+              <h2 className="font-semibold text-zinc-100">{item.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+                {item.description}
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {item.tags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </section>
+
         <section id="projects" className="py-12">
           <div className="mb-6">
-            <h2 className="text-2xl font-semibold tracking-tight">
+            <p className="text-xs font-medium uppercase tracking-wide text-emerald-400">
               Selected Work
+            </p>
+            <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+              Projects
             </h2>
             <p className="mt-2 text-sm text-zinc-400">
               A few projects that show how I combine Python backends with modern
@@ -220,30 +250,6 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </section>
-
-        <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {highlights.map((item) => (
-            <article
-              key={item.title}
-              className="rounded-xl border border-zinc-800/80 bg-zinc-900/30 p-5 transition hover:border-zinc-700"
-            >
-              <h2 className="font-semibold text-zinc-100">{item.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                {item.description}
-              </p>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {item.tags.map((tag) => (
-                  <li
-                    key={tag}
-                    className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </article>
-          ))}
         </section>
       </main>
 
