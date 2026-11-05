@@ -26,6 +26,30 @@ const highlights = [
   },
 ];
 
+const projects = [
+  {
+    role: "Full-Stack Developer",
+    title: "Automation Dashboard",
+    description:
+      "A real-time dashboard for scheduling and monitoring Python automation jobs, with typed APIs and a responsive UI.",
+    tags: ["Next.js", "FastAPI", "PostgreSQL"],
+  },
+  {
+    role: "Python Developer",
+    title: "Telegram Workflow Bot",
+    description:
+      "An aiogram-based bot that automates order intake, approvals, and notifications for a small operations team.",
+    tags: ["Python", "aiogram", "Redis"],
+  },
+  {
+    role: "Full-Stack Developer",
+    title: "Data Insight Portal",
+    description:
+      "A scraping and analytics portal that turns raw web data into searchable reports and clear visualizations.",
+    tags: ["React", "pandas", "SQL"],
+  },
+];
+
 function GitHubIcon() {
   return (
     <svg
@@ -154,6 +178,47 @@ export default function Home() {
                 LinkedIn
               </a>
             </div>
+          </div>
+        </section>
+
+        <section id="projects" className="py-12">
+          <div className="mb-6">
+            <h2 className="text-2xl font-semibold tracking-tight">
+              Selected Work
+            </h2>
+            <p className="mt-2 text-sm text-zinc-400">
+              A few projects that show how I combine Python backends with modern
+              full-stack web experiences.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects.map((project) => (
+              <article
+                key={project.title}
+                className="rounded-2xl border border-zinc-800/80 bg-zinc-900/50 p-5 transition-all hover:border-zinc-700"
+              >
+                <div className="aspect-video bg-zinc-800/60 rounded-xl mb-4 relative" />
+                <p className="text-xs font-medium uppercase tracking-wide text-emerald-400">
+                  {project.role}
+                </p>
+                <h3 className="mt-1 font-semibold text-zinc-100">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+                  {project.description}
+                </p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {project.tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-md border border-zinc-800/80 bg-zinc-950/60 px-2 py-1 text-xs text-zinc-400"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
