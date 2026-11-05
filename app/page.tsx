@@ -7,16 +7,16 @@ const navLinks = [
 
 const highlights = [
   {
-    title: "Backend & Automation",
+    title: "Python & Automation",
     description:
-      "Building reliable bots and background workflows with Python, aiogram, and Asyncio.",
+      "Building reliable bots, background workflows, and backend logic with Python, aiogram, and Asyncio.",
     tags: ["Python", "aiogram", "Asyncio"],
   },
   {
-    title: "Data Analytics & Scraping",
+    title: "Full-Stack Development",
     description:
-      "Turning messy data into insight with BeautifulSoup, pandas, and clear visualizations.",
-    tags: ["BeautifulSoup", "pandas", "Visualization"],
+      "Shipping responsive web interfaces and connecting them to robust Python backends with modern full-stack technologies.",
+    tags: ["React", "Next.js", "TypeScript"],
   },
   {
     title: "Fast API & Web Services",
@@ -99,7 +99,7 @@ export default function Home() {
                 <div>
                   <p className="font-medium">Mykhailo Steshyn</p>
                   <p className="text-sm text-zinc-400">
-                    Python Developer / Software Engineer
+                    Python &amp; Full-Stack Developer
                   </p>
                 </div>
                 <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-400">
@@ -115,15 +115,16 @@ export default function Home() {
 
           <div className="lg:col-span-7">
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
-              Python Developer / Software Engineer
+              Python &amp; Full-Stack Developer
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight sm:text-5xl">
               Mykhailo <span className="text-emerald-400">Steshyn</span>
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-400">
-              I build Python automations, clean APIs, and modern web
-              applications — turning repetitive work into dependable systems
-              and raw data into something useful.
+              I build Python automations, clean APIs, and modern full-stack web
+              applications — pairing robust backends with responsive interfaces
+              to turn repetitive work into dependable systems and raw data into
+              something useful.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
