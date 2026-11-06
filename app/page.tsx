@@ -151,12 +151,12 @@ export default function Home() {
         <section id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
           <div className="lg:col-span-5">
             <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-4 backdrop-blur-sm">
-              <div className="relative h-64 overflow-hidden rounded-xl bg-zinc-800">
+              <div className="relative h-[380px] overflow-hidden rounded-xl bg-zinc-800">
                 <Image
                   src="/foto_for_projekt_portfolio.jpg"
                   alt="Mykhailo Steshyn"
                   fill
-                  className="object-cover rounded-xl"
+                  className="object-cover object-top rounded-xl"
                 />
               </div>
               <div className="mt-4 flex items-center justify-between px-1 pb-1">
