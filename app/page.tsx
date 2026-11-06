@@ -325,17 +325,20 @@ export default function Home() {
 
         <section id="contact" className="py-12">
           <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-8 text-left backdrop-blur-sm">
-            <h2 className="text-3xl font-semibold tracking-tight text-white uppercase text-left sm:text-4xl">
-              Have an idea or project?
-            </h2>
-            <p className="mt-3 text-sm text-zinc-300 text-left">
-              Write to me — and let&apos;s bring it to life.
-            </p>
-            <div className="mt-6 flex flex-wrap items-start justify-start gap-3">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+              <div>
+                <h2 className="text-5xl font-extrabold tracking-tight text-white uppercase text-left sm:text-6xl">
+                  Have an idea or project?
+                </h2>
+                <p className="mt-3 text-sm text-zinc-300 text-left">
+                  Write to me — and let&apos;s bring it to life.
+                </p>
+              </div>
+              <div className="flex flex-wrap items-start md:justify-end gap-3">
               <a
                 href="mailto:misa75306@gmail.com"
                 aria-label="Email"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-all duration-300 ease-in-out hover:scale-105 hover:border-emerald-500/50 hover:text-emerald-400 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)]"
               >
                 <MailIcon />
                 Email
@@ -345,7 +348,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Telegram"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-all duration-300 ease-in-out hover:scale-105 hover:border-emerald-500/50 hover:text-emerald-400 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)]"
               >
                 <TelegramIcon />
                 Telegram
@@ -355,11 +358,12 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-all duration-300 ease-in-out hover:scale-105 hover:border-emerald-500/50 hover:text-emerald-400 hover:shadow-[0_0_15px_rgba(16,185,129,0.3)]"
               >
                 <GitHubIcon />
                 GitHub
               </a>
+              </div>
             </div>
           </div>
         </section>
