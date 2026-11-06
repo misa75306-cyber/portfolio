@@ -97,6 +97,19 @@ function MailIcon() {
   );
 }
 
+function GitHubIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      className="h-4 w-4"
+    >
+      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.31.678.921.678 1.856 0 1.34-.012 2.42-.012 2.749 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+    </svg>
+  );
+}
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
 
@@ -307,6 +320,47 @@ export default function Home() {
                 </ul>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section id="contact" className="py-12">
+          <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-8 text-center backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Have an idea or project?
+            </h2>
+            <p className="mt-3 text-sm text-zinc-300">
+              Write to me — and let&apos;s bring it to life.
+            </p>
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="mailto:misa75306@gmail.com"
+                aria-label="Email"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+              >
+                <MailIcon />
+                Email
+              </a>
+              <a
+                href="https://t.me/mix_top3"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+              >
+                <TelegramIcon />
+                Telegram
+              </a>
+              <a
+                href="https://github.com/misa75306-cyber?tab=overview&from=2026-11-01&to=2026-11-06"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-800/80 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:border-zinc-700 hover:text-emerald-400"
+              >
+                <GitHubIcon />
+                GitHub
+              </a>
+            </div>
           </div>
         </section>
       </main>
