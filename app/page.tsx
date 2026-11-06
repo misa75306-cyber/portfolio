@@ -149,9 +149,9 @@ export default function Home() {
 
       <main className="max-w-6xl mx-auto px-6 pt-28 pb-12 w-full">
         <section id="about" className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-6">
             <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-4 backdrop-blur-sm">
-              <div className="relative h-[380px] overflow-hidden rounded-xl bg-zinc-800">
+              <div className="relative h-[440px] overflow-hidden rounded-xl bg-zinc-800">
                 <Image
                   src="/foto_for_projekt_portfolio.jpg"
                   alt="Mykhailo Steshyn"
@@ -177,7 +177,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-6">
             <span className="inline-flex items-center rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
               Python &amp; Full-Stack Developer
             </span>
