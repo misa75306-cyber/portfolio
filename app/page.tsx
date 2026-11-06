@@ -131,9 +131,24 @@ export default function Home() {
       { rootMargin: "-45% 0px -45% 0px", threshold: 0 },
     );
 
-    sections.forEach((section) => observer.observe(section));
+    const handleScroll = () => {
+      const isAtBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 4;
 
-    return () => observer.disconnect();
+      if (isAtBottom) {
+        setActiveSection("contact");
+      }
+    };
+
+    sections.forEach((section) => observer.observe(section));
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
