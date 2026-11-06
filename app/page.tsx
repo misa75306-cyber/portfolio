@@ -38,6 +38,8 @@ const projects = [
     description:
       "A real-time dashboard for scheduling and monitoring Python automation jobs, with typed APIs and a responsive UI.",
     tags: ["Next.js", "FastAPI", "PostgreSQL"],
+    image: "/images/tg_baner.webp",
+    imageAlt: "Automation Dashboard banner",
   },
   {
     role: "Python Developer",
@@ -45,6 +47,8 @@ const projects = [
     description:
       "An aiogram-based bot that automates order intake, approvals, and notifications for a small operations team.",
     tags: ["Python", "aiogram", "Redis"],
+    image: "/images/2.webp",
+    imageAlt: "Telegram Workflow Bot process diagram",
   },
   {
     role: "Full-Stack Developer",
@@ -52,6 +56,8 @@ const projects = [
     description:
       "A scraping and analytics portal that turns raw web data into searchable reports and clear visualizations.",
     tags: ["React", "pandas", "SQL"],
+    image: "/images/Data_Insight_Portal.webp",
+    imageAlt: "Data Insight Portal interface",
   },
 ];
 
@@ -203,7 +209,7 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-5 py-2.5 font-medium text-zinc-950 transition-colors hover:bg-emerald-600"
+                className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-5 py-2.5 font-medium text-white transition-colors hover:bg-emerald-600"
               >
                 Explore Work
               </a>
@@ -275,7 +281,11 @@ export default function Home() {
                 key={project.title}
                 className="rounded-2xl border border-zinc-800/80 bg-zinc-900/50 p-5 transition-all hover:border-zinc-700"
               >
-                <div className="aspect-video bg-zinc-800/60 rounded-xl mb-4 relative" />
+                <img
+                  src={project.image}
+                  alt={project.imageAlt}
+                  className="aspect-video w-full rounded-xl mb-4 object-cover"
+                />
                 <p className="text-xs font-medium uppercase tracking-wide text-emerald-400">
                   {project.role}
                 </p>
