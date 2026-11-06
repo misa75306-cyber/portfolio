@@ -38,7 +38,7 @@ const projects = [
     description:
       "A real-time dashboard for scheduling and monitoring Python automation jobs, with typed APIs and a responsive UI.",
     tags: ["Next.js", "FastAPI", "PostgreSQL"],
-    image: "/tg_baner.png",
+    image: "/PyFlow.png",
     imageAlt: "Automation Dashboard banner",
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     description:
       "An aiogram-based bot that automates order intake, approvals, and notifications for a small operations team.",
     tags: ["Python", "aiogram", "Redis"],
-    image: "/PyFlow.png",
+    image: "/tg_baner.png",
     imageAlt: "Telegram Workflow Bot process diagram",
   },
   {
