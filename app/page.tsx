@@ -231,8 +231,8 @@ export default function Home() {
             <p className="mt-4 max-w-xl text-base leading-relaxed text-zinc-300">
               I build Python automations, clean APIs, and modern full-stack web
               applications — pairing robust backends with responsive interfaces
-              to turn repetitive work into dependable systems and raw data into
-              something useful.
+              to turn repetitive work into dependable systems, while leveraging
+              AI-assisted workflows to ship faster and smarter.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
