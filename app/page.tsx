@@ -324,14 +324,14 @@ export default function Home() {
         </section>
 
         <section id="contact" className="py-12">
-          <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-8 text-center backdrop-blur-sm">
-            <h2 className="text-2xl font-semibold tracking-tight text-white uppercase sm:text-3xl">
+          <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-8 text-left backdrop-blur-sm">
+            <h2 className="text-3xl font-semibold tracking-tight text-white uppercase text-left sm:text-4xl">
               Have an idea or project?
             </h2>
-            <p className="mt-3 text-sm text-zinc-300">
+            <p className="mt-3 text-sm text-zinc-300 text-left">
               Write to me — and let&apos;s bring it to life.
             </p>
-            <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
+            <div className="mt-6 flex flex-wrap items-start justify-start gap-3">
               <a
                 href="mailto:misa75306@gmail.com"
                 aria-label="Email"
