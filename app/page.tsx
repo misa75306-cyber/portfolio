@@ -292,12 +292,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <footer id="contact" className="border-t border-zinc-800/80">
-        <div className="max-w-6xl mx-auto px-6 py-6 text-sm text-zinc-500">
-          © {new Date().getFullYear()} Mykhailo. All rights reserved.
-        </div>
-      </footer>
     </div>
   );
 }
