@@ -325,13 +325,13 @@ export default function Home() {
 
         <section id="contact" className="py-12">
           <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-8 text-center backdrop-blur-sm">
-            <h2 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            <h2 className="text-2xl font-semibold tracking-tight text-white uppercase sm:text-3xl">
               Have an idea or project?
             </h2>
             <p className="mt-3 text-sm text-zinc-300">
               Write to me — and let&apos;s bring it to life.
             </p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center justify-end gap-3">
               <a
                 href="mailto:misa75306@gmail.com"
                 aria-label="Email"
