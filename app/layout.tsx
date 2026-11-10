@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og_image.jpg",
+        url: "/og_image.png",
         width: 1200,
         height: 630,
         alt: "Mykhailo Steshyn — Full-Stack, Python & AI-Assisted Developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/og_image.jpg",
+        url: "/og_image.png",
         width: 1200,
         height: 630,
         alt: "Mykhailo Steshyn — Full-Stack, Python & AI-Assisted Developer",
